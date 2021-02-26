@@ -104,4 +104,22 @@ nav .nav-bar div {
   margin: 1rem;
   height: 100vh;
 }
+
+.popular-people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.person {
+  width: 100%;
+  margin: 1rem;
+  border: 1px solid blue;
+}
 /*# sourceMappingURL=style.css.map */
