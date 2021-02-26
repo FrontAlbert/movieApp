@@ -1,0 +1,99 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1e1f26;
+    margin: 0;
+
+}
+
+.logo{
+    font-size: 3rem;
+}
+
+nav {
+    font-family: "Roboto", sans-serif;
+    color: #d0e1f9;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 14rem;
+    background-color: #283655;
+    height: 100vh;
+    position: fixed;
+    a {
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #d0e1f9;
+        &:hover {
+            font-size: 1.4rem;
+        }
+    }
+    .nav-bar {
+        div {
+            border-radius: 10px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.icon {
+    padding-right: 1rem;
+    color: #d0e1f9;
+}
+
+.genre-list {
+    padding-left: 1rem;
+    list-style-type: none;
+
+}
+
+#main{
+    padding-left: 14rem;
+    width: 100%;
+}
+
+
+.main-header{
+    width: 100%;
+    height: 6vh;
+    background-color: rgba(40,54,85,0.7)    ;
+    margin: 0;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+// Search Bar
+.search-form {
+    display: flex;
+    padding: none;
+    width: 30%;
+  }
+  .search-form input {
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    background: transparent;
+    &:focus{
+        background: transparent;
+    }
+  }
+  .search-form button {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    background:transparent;
+    cursor: pointer;
+  }
+
+  .movie-body{
+      margin: 1rem;
+      height: 100vh;
+      background: #4d648d;
+  }
