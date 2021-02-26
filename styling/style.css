@@ -114,8 +114,12 @@ nav .nav-btns {
 
 .movie-body {
   width: 85%;
-  border: 1px solid #d0e1f9;
   margin: auto;
+}
+
+.movie-body h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .popular-people {
@@ -123,7 +127,7 @@ nav .nav-btns {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 80%;
 }
 
 @media (max-width: 1200px) {
@@ -151,7 +155,7 @@ nav .nav-btns {
   margin-top: 0;
   min-width: 100%;
   color: white;
-  height: 10vh;
+  height: 7vh;
 }
 
 .person-header {

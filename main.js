@@ -2,6 +2,7 @@ const api_key = "c2d2d9cda178ce20abd7ab8e83b201bf";
 const people = document.querySelector(".popular-people");
 const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
+// People Fetch
 async function fetchPeople() {
     const dataFetch = await fetch(
         `https://api.themoviedb.org/3/person/popular?api_key=c2d2d9cda178ce20abd7ab8e83b201bf&language=en-US&page=1
@@ -38,3 +39,4 @@ const displayPeople = () => {
 window.onload = (e) => {
     displayPeople();
 };
+// People Fetch
