@@ -126,7 +126,6 @@ nav .nav-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid blue;
 }
 
 .markup-container {
