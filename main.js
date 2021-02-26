@@ -15,13 +15,21 @@ async function fetchPeople() {
 const displayPeople = () => {
     fetchPeople().then((res) => {
         array1 = res.results;
-        array1.slice(0, 10).forEach((x) => {
-            console.log(x);
+        array1.slice(0, 4).forEach((x) => {
+            // console.log(x);
+            console.log(x)
             const markup = `
             <div class="container">
                 <img class="person" src=${IMAGE_URL + x.profile_path}>
+                <div class="person-details">
+                    <div class="person-header">
+                        <h5>${x.name}<h5>
+                        <i class="fas fa-crown"> ${x.popularity}</i>
+                    </div>
+                </div>
             </div>
-            `;
+            `
+            ;
             people.insertAdjacentHTML("beforeend", markup);
         });
     });
