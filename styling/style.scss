@@ -20,7 +20,7 @@ nav {
     font-family: "Roboto", sans-serif;
     color: #d0e1f9;
     width: 100%;
-    background-color: #18191A;
+    background-color: #18191a;
 
     a {
         font-family: "Roboto", sans-serif;
@@ -30,7 +30,7 @@ nav {
         padding: 1rem;
         &:hover {
             border-radius: 30px;
-            background-color:#4d648d;
+            background-color: #4d648d;
         }
     }
     .nav-bar {
@@ -42,7 +42,7 @@ nav {
             padding-bottom: 0.5rem;
         }
     }
-    .nav-btns{
+    .nav-btns {
         display: flex;
         justify-content: space-around;
     }
@@ -58,11 +58,10 @@ nav {
     list-style-type: none;
 }
 
-
 .main-header {
     width: 30%;
     height: 4vh;
-    background-color:#1e1f26;
+    background-color: #1e1f26;
     margin: auto;
     font-size: 2rem;
     display: flex;
@@ -91,52 +90,71 @@ nav {
     cursor: pointer;
 }
 
-.movie-body {  
-    width: 85%;
+.movie-body {
+    width: 80%;
     margin: auto;
-    h1{
+    h1 {
         font-family: "Roboto", sans-serif;
         color: white;
     }
 }
 
-
-.popular-people {
+.trending-movies, .popular-people, .now-playing{
     display: flex;
-    margin: auto;
-    width: 80%;
+    border: 1px solid blue;
 }
-@media (max-width: 1200px) {
-    .popular-people {
-        width: 90%;
+
+.markup-container {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    margin: 1rem;
+}
+
+.markup-image{
+    width: 100%;
+}
+
+.detail-header{
+   background-color:#283655 ;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+.detail-header2{
+    background-color:#283655 ;
+     display: flex;
+     padding: 0 1rem;
+     justify-content: space-between;
+ }
+
+.trailer{
+    cursor:pointer;
+    &:hover{
+        text-decoration: underline;
+        color: #d0e1f9;
     }
 }
 
-.container {
-    padding: 1rem;
-    margin: 0 0.5rem;
-}
+// overlay
 
-.person {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 0;
-    min-height: 20vh;
-
-}
-
-.person-details {
-    background-color: #283655;
-    padding: 0 1rem;
-    margin: auto;
-    margin-top: 0;
-    min-width: 100%;
-    color: white;
-    height: 7vh;
-
-}
-
-.person-header {
-    display: flex;
-    justify-content: space-between;
+.overlay-container{
+    position: relative;
+    img{
+        display: block;
+    }
+    .overlay{
+        position: absolute; 
+        top: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.9); /* Black see-through */
+        opacity: 0;
+        margin: auto;
+        padding: 1rem;
+        height: 100%;
+        font-family: "Roboto", sans-serif;
+        &:hover{
+            opacity: 1;
+        }
+    }
 }
