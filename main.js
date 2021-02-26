@@ -14,10 +14,10 @@ const displayPeople = () =>{
     fetchPeople().then((res)=>{
         console.log(res.results)
         array1= res.results
-        array1.slice(0,5).forEach(x =>{
+        array1.slice(0,6).forEach(x =>{
             
         })
-        console.log(array1.slice(0,5))
+        console.log(array1.slice(0,6))
     })
 
 
