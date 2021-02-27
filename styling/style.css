@@ -98,6 +98,7 @@ nav .nav-btns {
   width: 100%;
   border: none;
   background: transparent;
+  color: white;
 }
 
 .search-form input:focus {
@@ -340,17 +341,50 @@ nav .nav-btns {
   background: #283655;
   width: 100%;
   margin-top: 2vh;
-  border-radius: 50px;
 }
 
 .movie-results {
   margin: 0rem;
   width: 25%;
   padding: 1rem;
+  position: relative;
 }
 
 .movie-results img {
   border-radius: 10px;
   width: 100%;
+}
+
+.results-overlay {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  background: #4d648d;
+  opacity: 0.6;
+  font-family: "Roboto", sans-serif;
+}
+
+.results-overlay2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  background: #4d648d;
+  opacity: 0.6;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
