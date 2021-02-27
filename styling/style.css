@@ -250,6 +250,18 @@ nav .nav-btns {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail-header2 a {
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  padding: 0.5rem;
+  font-weight: 3rem;
+  border-radius: 10px;
 }
 
 .trailer {

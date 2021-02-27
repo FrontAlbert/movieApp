@@ -92,7 +92,7 @@ const displayNowPlaying = () => {
                     <h5>${(name = x.release_date
                         ? `${x.release_date}`
                         : `${x.first_air_date}`)}</h5>
-                    <h5 class="trailer">Watch Now<h5>
+                    <a href=https://www.imdb.com/ class="trailer">IMDB</a>
             </div>
                     
                 </div>
@@ -139,7 +139,7 @@ const displayTrending = () => {
                             <h5>${(name = x.release_date
                                 ? `${x.release_date}`
                                 : `${x.first_air_date}`)}</h5>
-                            <h5 class="trailer">Watch Now<h5>
+                                <a href="https://www.imdb.com/" class="trailer">IMDB</a>
                     </div>
                 </div>
             </div>
@@ -207,7 +207,6 @@ const clearSearches = () => {
 const clearField = () => {
     searchInput.value = "";
 };
-
 
 submitBtn.addEventListener("click", function (e) {
     e.preventDefault();
