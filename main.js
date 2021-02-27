@@ -3,7 +3,42 @@ const people = document.querySelector(".popular-people");
 const trending = document.querySelector(".trending-movies");
 const nowPlaying = document.querySelector(".now-playing");
 const hotFilms = document.querySelector(".hot-films");
+const searchResults = document.querySelector(".search-results");
 const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
+
+// Fetch Search Function
+async function searchMovie() {
+    const dataFetch = await fetch(
+        `https://api.themoviedb.org/3/search/movie?api_key=c2d2d9cda178ce20abd7ab8e83b201bf&language=en-US&page=1&query=shutter island&include_adult=false
+        `
+    );
+    const data = await dataFetch.json();
+    console.log(data);
+    return data;
+}
+
+const displaySearchMovies = () => {
+    searchMovie().then((response) => {
+        console.log(response.results);
+        movies = response.results;
+        movies.slice(0, 8).forEach((x) => {
+            console.log(x);
+            const markup = `
+            <div class="movie-results">
+                <img src="${IMAGE_URL + x.poster_path}">
+                </img>
+                <div>
+                
+                </div>
+            </div>
+            `;
+            searchResults.insertAdjacentHTML("beforeend", markup);
+        });
+    });
+};
+
+
+// Fetch Search Function
 
 // FETCH NOW PLAYING
 async function fetchNowPlaying() {
@@ -46,7 +81,7 @@ const displayNowPlaying = () => {
             nowPlaying.insertAdjacentHTML("beforeend", markup);
         });
         array1.slice(4, 10).forEach((x) => {
-            console.log(x);
+            // console.log(x);
             const markup2 = `
             <div class="film-list">
                 <ul>
@@ -143,4 +178,5 @@ window.onload = (e) => {
     displayPeople();
     displayTrending();
     displayNowPlaying();
+    displaySearchMovies();
 };
