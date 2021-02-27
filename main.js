@@ -2,6 +2,7 @@ const api_key = "c2d2d9cda178ce20abd7ab8e83b201bf";
 const people = document.querySelector(".popular-people");
 const trending = document.querySelector(".trending-movies");
 const nowPlaying = document.querySelector(".now-playing");
+const hotFilms = document.querySelector(".hot-films");
 const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
 // FETCH NOW PLAYING
@@ -18,8 +19,8 @@ async function fetchNowPlaying() {
 const displayNowPlaying = () => {
     fetchNowPlaying().then((res) => {
         array1 = res.results;
-        array1.slice(0, 5).forEach((x) => {
-            console.log(x);
+        array1.slice(0, 3).forEach((x) => {
+            // console.log(x);
             const markup = `
             <div class="markup-container">
             <div class="overlay-container">
@@ -33,8 +34,9 @@ const displayNowPlaying = () => {
                         <i class="fas fa-star"> ${x.vote_average}</i>
                     </div>
                     <div class="detail-header2">
-                    <h5>${(name = x.release_date ? `${x.release_date}`
-                    : `${x.first_air_date}`)}</h5>
+                    <h5>${(name = x.release_date
+                        ? `${x.release_date}`
+                        : `${x.first_air_date}`)}</h5>
                     <h5 class="trailer">Watch Now<h5>
             </div>
                     
@@ -42,6 +44,17 @@ const displayNowPlaying = () => {
             </div>
             `;
             nowPlaying.insertAdjacentHTML("beforeend", markup);
+        });
+        array1.slice(4, 10).forEach((x) => {
+            console.log(x);
+            const markup2 = `
+            <div class="film-list">
+                <ul>
+                    <li> <i class="far fa-star"> ${x.vote_average} ${x.title}</i></li>
+                </ul>
+            </div>
+            `;
+            hotFilms.insertAdjacentHTML("beforeend", markup2);
         });
     });
 };
@@ -52,7 +65,7 @@ const displayNowPlaying = () => {
 const displayTrending = () => {
     fetchTrending().then((res) => {
         array1 = res.results;
-        array1.slice(0, 5).forEach((x) => {
+        array1.slice(0, 4).forEach((x) => {
             // console.log(x);
             const markup = `
             <div class="markup-container">
@@ -68,9 +81,10 @@ const displayTrending = () => {
                         <i class="fas fa-crown"> ${x.vote_average}</i>
                     </div>
                     <div class="detail-header2">
-                            <h5>${(name = x.release_date ? `${x.release_date}`
-                            : `${x.first_air_date}`)}</h5>
-                            <h5 class="trailer">Trailer<h5>
+                            <h5>${(name = x.release_date
+                                ? `${x.release_date}`
+                                : `${x.first_air_date}`)}</h5>
+                            <h5 class="trailer">Watch Now<h5>
                     </div>
                 </div>
             </div>
@@ -81,8 +95,6 @@ const displayTrending = () => {
 };
 
 // FETCH TRENDING
-
-
 
 // People Fetch
 async function fetchPeople() {
@@ -127,10 +139,8 @@ async function fetchTrending() {
     return data;
 }
 
-
-
 window.onload = (e) => {
     displayPeople();
     displayTrending();
-    displayNowPlaying()
+    displayNowPlaying();
 };
