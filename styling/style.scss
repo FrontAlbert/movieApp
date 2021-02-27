@@ -208,6 +208,25 @@ nav {
 
 
 // overlay
+.movie-results{
+    position: relative;
+    img {
+        display: block;
+    }
+    .overlay {
+        overflow-y: scroll;
+        position: absolute;
+        top: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.9); /* Black see-through */
+        opacity: 0;
+        margin: auto;
+        padding: 1rem;
+        height: 100%;
+        color: white;
+        font-family: "Roboto", sans-serif;
+    }
+}
 
 .overlay-container {
     position: relative;
@@ -304,5 +323,9 @@ nav {
     opacity: 0.6;
     font-family: "Roboto", sans-serif;
     margin: auto;
+}
+
+.close{
+    color: white;
 }
 

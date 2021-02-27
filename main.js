@@ -30,7 +30,10 @@ const displaySearchMovies = () => {
             console.log(x);
             const markup = `
             <div class="movie-results">
+            <div class="overlay-container">
                 <img src="${IMAGE_URL + x.poster_path}">
+                <p class="overlay">${x.overview}</p>
+            </div>
                 <div class="results-overlay">
                     <p>${x.original_title}</p>
                     <i class="fas fa-star">${x.vote_average}</i>
@@ -204,6 +207,7 @@ const clearSearches = () => {
 const clearField = () => {
     searchInput.value = "";
 };
+
 
 submitBtn.addEventListener("click", function (e) {
     e.preventDefault();
