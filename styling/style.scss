@@ -224,9 +224,9 @@ nav {
     .markup-container {
         width: 100%;
     }
-    .detail-header{
+    .detail-header {
         min-height: 9vh;
-}
+    }
 }
 
 @media (max-width: 960px) {
@@ -237,46 +237,46 @@ nav {
     .now-playing {
         width: 100%;
     }
-    .now-playing-news{
+    .now-playing-news {
         text-align: center;
         width: 100%;
     }
-    .detail-header{
-            min-height: 10vh;
+    .detail-header {
+        min-height: 10vh;
     }
 }
-@media (max-width: 700px){
-    .popular-people{
+@media (max-width: 700px) {
+    .popular-people {
         margin: auto;
-        width: 95%;    
+        width: 95%;
         flex-wrap: wrap;
-        .markup-container{
-            margin:1rem auto;
+        .markup-container {
+            margin: 1rem auto;
             width: 45%;
         }
     }
 }
 
 @media (max-width: 570px) {
-    .now-playing-news{
+    .now-playing-news {
         display: none;
     }
     .now-playing,
-    .trending-movies{
+    .trending-movies {
         width: 100%;
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
     }
-    .markup-container{
+    .markup-container {
         margin: 1rem auto;
         width: 45%;
     }
-    .detail-header{
+    .detail-header {
         min-height: 8vh;
-}
-body h1{
-    text-align: center;
-}
+    }
+    body h1 {
+        text-align: center;
+    }
 }
 
 .trailer {
@@ -456,13 +456,16 @@ body h1{
     .secondary-container {
         width: 50%;
     }
+    .detail-header{
+        margin: none;
+    }
 }
 @media (max-width: 465px) {
     .secondary-body {
         width: 100%;
     }
     .secondary-container {
-        min-width: 95%;
+        min-width: 90%;
     }
 }
 

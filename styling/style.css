@@ -569,6 +569,9 @@ nav .nav-btns div a {
   .secondary-container {
     width: 50%;
   }
+  .detail-header {
+    margin: none;
+  }
 }
 
 @media (max-width: 465px) {
@@ -576,7 +579,7 @@ nav .nav-btns div a {
     width: 100%;
   }
   .secondary-container {
-    min-width: 95%;
+    min-width: 90%;
   }
 }
 
