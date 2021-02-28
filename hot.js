@@ -2,11 +2,11 @@ const content = document.querySelector('.secondary-playing')
 
 async function fetchNewRelease() {
     const dataFetch = await fetch(
-        `https://api.themoviedb.org/3/movie/now_playing?api_key=c2d2d9cda178ce20abd7ab8e83b201bf&language=en-US&page=1
+        `https://api.themoviedb.org/3/movie/popular?api_key=c2d2d9cda178ce20abd7ab8e83b201bf&language=en-US&page=1
         `
     );
     const data = await dataFetch.json();
-    // console.log(data);
+    console.log(data);
     return data;
 }
 
