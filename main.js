@@ -35,13 +35,13 @@ const displaySearchMovies = () => {
                 <p class="overlay">${x.overview}</p>
             </div>
                 <div class="results-overlay">
-                    <p>${x.original_title}</p>
-                    <i class="fas fa-star">${x.vote_average}</i>
+                        <p>${x.original_title}</p>
+                        <i class="fas fa-star">${x.vote_average}</i>
+                    </div>
+                    <div class="results-overlay2">
+                    <p>${x.release_date}</p>
+                    <i class="fas fa-eye"> ${x.vote_count}</i>
                 </div>
-                <div class="results-overlay2">
-                <p>${x.release_date}</p>
-                <i class="fas fa-eye"> ${x.vote_count}</i>
-            </div>
             </div>
             `;
             searchResults.insertAdjacentHTML("beforeend", markup);
