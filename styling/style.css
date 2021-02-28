@@ -12,6 +12,15 @@ body {
 
 .logo {
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo2 {
@@ -25,6 +34,10 @@ nav {
   background-color: #18191a;
 }
 
+nav p {
+  margin: none;
+}
+
 nav a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -36,6 +49,7 @@ nav a {
 nav a:hover {
   border-radius: 30px;
   background-color: #4d648d;
+  padding: 0.1rem 1rem;
 }
 
 nav .nav-bar {
@@ -59,16 +73,23 @@ nav .nav-btns {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-btns div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .icon {
   padding-right: 1rem;
   color: #d0e1f9;
-}
-
-.genre-list {
-  padding-left: 1rem;
-  list-style-type: none;
 }
 
 .main-header {
@@ -390,6 +411,28 @@ nav .nav-btns {
   width: 100%;
 }
 
+@media (max-width: 875px) {
+  .movie-results {
+    width: 45%;
+    padding: 0;
+  }
+  .movie-results img {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .movie-results {
+    width: 90%;
+    padding: 0.5rem 0;
+  }
+  .movie-results img {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
 .results-overlay {
   width: 100%;
   display: -webkit-box;
@@ -428,14 +471,40 @@ nav .nav-btns {
 }
 
 .secondary-body {
-  width: 60%;
+  width: 70%;
   margin: auto;
-  min-width: 1150px;
 }
 
 .secondary-body h1 {
   font-family: "Roboto", sans-serif;
   color: white;
+}
+
+@media (max-width: 1160px) {
+  nav
+a:hover {
+    font-size: 1.2rem;
+    background: none;
+  }
+  .hidetext {
+    display: none;
+  }
+  .secondary-body {
+    width: 100%;
+    min-width: none;
+  }
+  .secondary-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 465px) {
+  .secondary-body {
+    width: 100%;
+  }
+  .secondary-container {
+    min-width: 95%;
+  }
 }
 
 .secondary-playing {
@@ -452,6 +521,7 @@ nav .nav-btns {
 .secondary-container {
   color: white;
   font-family: "Roboto", sans-serif;
+  width: 100%;
   max-width: 225px;
   margin: 0.1rem;
 }

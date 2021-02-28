@@ -11,6 +11,9 @@ body {
 
 .logo {
     font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .logo2 {
     font-family: "Roboto", sans-serif;
@@ -21,6 +24,9 @@ nav {
     color: #d0e1f9;
     width: 100%;
     background-color: #18191a;
+    p {
+        margin: none;
+    }
 
     a {
         font-family: "Roboto", sans-serif;
@@ -31,6 +37,7 @@ nav {
         &:hover {
             border-radius: 30px;
             background-color: #4d648d;
+            padding: 0.1rem 1rem;
         }
     }
     .nav-bar {
@@ -45,17 +52,17 @@ nav {
     .nav-btns {
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        div a {
+            display: flex;
+            align-items: center;
+        }
     }
 }
 
 .icon {
     padding-right: 1rem;
     color: #d0e1f9;
-}
-
-.genre-list {
-    padding-left: 1rem;
-    list-style-type: none;
 }
 
 .main-header {
@@ -196,7 +203,7 @@ nav {
     padding: 0 1rem;
     justify-content: space-between;
     align-items: center;
-    a{
+    a {
         text-decoration: none;
         color: black;
         background: yellow;
@@ -214,10 +221,8 @@ nav {
     }
 }
 
-
-
 // overlay
-.movie-results{
+.movie-results {
     position: relative;
     img {
         display: block;
@@ -290,8 +295,7 @@ nav {
     }
 }
 
-
-.search-results{
+.search-results {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -299,19 +303,41 @@ nav {
     width: 100%;
     margin-top: 2vh;
 }
-.movie-results{
+.movie-results {
     margin: 0rem;
     width: 25%;
     padding: 1rem;
     position: relative;
-    img{
+    img {
         border-radius: 10px;
         width: 100%;
     }
 }
 
+@media (max-width:875px){
+    .movie-results {
+        width: 45%;
+        padding: 0;
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:450px){
+    .movie-results {
+        width: 90%;
+        padding: 0.5rem 0;
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+}
+
 // Search Overlay
-.results-overlay{
+.results-overlay {
     width: 100%;
     display: flex;
     align-items: center;
@@ -322,7 +348,7 @@ nav {
     font-family: "Roboto", sans-serif;
 }
 
-.results-overlay2{
+.results-overlay2 {
     width: 100%;
     display: flex;
     align-items: center;
@@ -334,35 +360,59 @@ nav {
     margin: auto;
 }
 
-.close{
+.close {
     color: white;
 }
 
 // Newly
 
-.secondary-body{
-    width: 60%;
+.secondary-body {
+    width: 70%;
     margin: auto;
-    min-width: 1150px;
-    h1{
+    h1 {
         font-family: "Roboto", sans-serif;
         color: white;
     }
 }
 
-.secondary-playing{
+@media (max-width: 1160px) {
+    nav 
+    a:hover {
+        font-size: 1.2rem;
+        background: none;
+    }
+    .hidetext {
+        display: none;
+    }
+    .secondary-body {
+        width: 100%;
+        min-width: none;
+    }
+    .secondary-container {
+        width: 50%;
+    }
+}
+@media (max-width: 465px) {
+    .secondary-body {
+        width: 100%;
+    }
+    .secondary-container {
+        min-width: 95%;
+    }
+}
+
+.secondary-playing {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 .secondary-container {
     color: white;
     font-family: "Roboto", sans-serif;
+    width: 100%;
     max-width: 225px;
     margin: 0.1rem;
-
 }
 
 .secondary-overlay {
@@ -407,7 +457,7 @@ nav {
     padding: 0 1rem;
     justify-content: space-between;
     align-items: center;
-    a{
+    a {
         text-decoration: none;
         color: black;
         background: yellow;
@@ -418,23 +468,23 @@ nav {
 }
 
 // .scroll-bar
-    /* width */
+/* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #283655;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #d0e1f9;
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: white;
-  }
+}
