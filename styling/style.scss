@@ -175,7 +175,6 @@ nav {
 }
 
 .markup-container {
-    border: 1px solid pink;
     color: white;
     font-family: "Roboto", sans-serif;
     width: 100%;
@@ -187,7 +186,6 @@ nav {
 }
 
 .markup-details {
-    border: 1px solid blue;
     background-color: #283655;
 }
 
@@ -213,21 +211,72 @@ nav {
     }
 }
 
-@media (max-width:1160px){
-    .movie-body{
+@media (max-width: 1160px) {
+    .movie-body {
         margin: auto;
         min-width: 100%;
     }
-    .movie-flex{
+    .movie-flex {
         margin: auto;
         width: 95%;
-        border:1px solid blue;
         font-size: 1rem;
     }
-    .markup-container{
+    .markup-container {
         width: 100%;
     }
-    
+    .detail-header{
+        min-height: 9vh;
+}
+}
+
+@media (max-width: 960px) {
+    .movie-flex {
+        flex-direction: column;
+    }
+    .trending-movies,
+    .now-playing {
+        width: 100%;
+    }
+    .now-playing-news{
+        text-align: center;
+        width: 100%;
+    }
+    .detail-header{
+            min-height: 10vh;
+    }
+}
+@media (max-width: 700px){
+    .popular-people{
+        margin: auto;
+        width: 95%;    
+        flex-wrap: wrap;
+        .markup-container{
+            margin:1rem auto;
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .now-playing-news{
+        display: none;
+    }
+    .now-playing,
+    .trending-movies{
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .markup-container{
+        margin: 1rem auto;
+        width: 45%;
+    }
+    .detail-header{
+        min-height: 8vh;
+}
+body h1{
+    text-align: center;
+}
 }
 
 .trailer {
@@ -331,7 +380,7 @@ nav {
     }
 }
 
-@media (max-width:875px){
+@media (max-width: 875px) {
     .movie-results {
         width: 45%;
         padding: 0;
@@ -342,7 +391,7 @@ nav {
     }
 }
 
-@media (max-width:450px){
+@media (max-width: 450px) {
     .movie-results {
         width: 90%;
         padding: 0.5rem 0;
@@ -393,8 +442,7 @@ nav {
 }
 
 @media (max-width: 1160px) {
-    nav 
-    a:hover {
+    nav a:hover {
         font-size: 1.2rem;
         background: none;
     }

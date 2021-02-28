@@ -235,7 +235,6 @@ nav .nav-btns div a {
 }
 
 .markup-container {
-  border: 1px solid pink;
   color: white;
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -247,7 +246,6 @@ nav .nav-btns div a {
 }
 
 .markup-details {
-  border: 1px solid blue;
   background-color: #283655;
 }
 
@@ -293,11 +291,71 @@ nav .nav-btns div a {
   .movie-flex {
     margin: auto;
     width: 95%;
-    border: 1px solid blue;
     font-size: 1rem;
   }
   .markup-container {
     width: 100%;
+  }
+  .detail-header {
+    min-height: 9vh;
+  }
+}
+
+@media (max-width: 960px) {
+  .movie-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trending-movies,
+  .now-playing {
+    width: 100%;
+  }
+  .now-playing-news {
+    text-align: center;
+    width: 100%;
+  }
+  .detail-header {
+    min-height: 10vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .popular-people {
+    margin: auto;
+    width: 95%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .popular-people .markup-container {
+    margin: 1rem auto;
+    width: 45%;
+  }
+}
+
+@media (max-width: 570px) {
+  .now-playing-news {
+    display: none;
+  }
+  .now-playing,
+  .trending-movies {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .markup-container {
+    margin: 1rem auto;
+    width: 45%;
+  }
+  .detail-header {
+    min-height: 8vh;
+  }
+  body h1 {
+    text-align: center;
   }
 }
 
@@ -497,8 +555,7 @@ nav .nav-btns div a {
 }
 
 @media (max-width: 1160px) {
-  nav
-a:hover {
+  nav a:hover {
     font-size: 1.2rem;
     background: none;
   }
