@@ -226,12 +226,12 @@ submitBtn.addEventListener("click", function (e) {
 gsap.to("nav", { opacity: 1, duration: 3 });
 gsap.to(".movie-flex ", { x: "0%", duration: 1.25, ease: "expo" });
 gsap.to(".now-playing-news", { x: "0%", duration: 1.25 });
-gsap.to(".secondary-playing", { opacity: 1, duration: 1.5 });
+gsap.to(".secondary-playing", { opacity: 1, x: "0%", duration: 1.5 });
 
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
-  toggleActions: "restart pause resume pause"
+    toggleActions: "restart pause resume pause",
 });
 
 gsap.registerPlugin(ScrollTrigger);

@@ -713,6 +713,8 @@ nav .nav-btns div a {
 }
 
 .secondary-playing {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   opacity: 0;
 }
 
