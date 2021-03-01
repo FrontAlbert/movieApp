@@ -228,12 +228,20 @@ gsap.to(".movie-flex ", { x: "0%", duration: 1.25, ease: "expo" });
 gsap.to(".now-playing-news", { x: "0%", duration: 1.25 });
 gsap.to(".secondary-playing", { opacity: 1, duration: 1.5 });
 
-let tl = gsap.timeline({
-    scrollTrigger:{
-        trigger:'.reveal',
-        start:".reveal",
-    }
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.defaults({
+  toggleActions: "restart pause resume pause"
 });
 
-    tl.to(".reveal", {opacity:1, duration:3,})
+gsap.registerPlugin(ScrollTrigger);
 
+gsap.to(".actors", {
+    scrollTrigger: {
+        trigger: ".actors",
+        toggleActions: "restart none reverse pause",
+    },
+    duration: 2,
+    opacity: 1,
+    ease: "none",
+});
