@@ -715,4 +715,8 @@ nav .nav-btns div a {
 .secondary-playing {
   opacity: 0;
 }
+
+.reveal {
+  opacity: 0;
+}
 /*# sourceMappingURL=style.css.map */

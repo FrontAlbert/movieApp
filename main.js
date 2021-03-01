@@ -224,6 +224,16 @@ submitBtn.addEventListener("click", function (e) {
 // Class and then class setting u want and then duration, ease u can google it
 
 gsap.to("nav", { opacity: 1, duration: 3 });
-gsap.to(".movie-flex ", { x: "0%", duration: 1.25, ease: "bounce" });
+gsap.to(".movie-flex ", { x: "0%", duration: 1.25, ease: "expo" });
 gsap.to(".now-playing-news", { x: "0%", duration: 1.25 });
 gsap.to(".secondary-playing", { opacity: 1, duration: 1.5 });
+
+let tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.reveal',
+        start:".reveal",
+    }
+});
+
+    tl.to(".reveal", {opacity:1, duration:3,})
+
