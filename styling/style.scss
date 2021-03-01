@@ -24,6 +24,7 @@ nav {
     color: #d0e1f9;
     width: 100%;
     background-color: #18191a;
+    opacity: 0;
     p {
         margin: none;
     }
@@ -456,7 +457,7 @@ nav {
     .secondary-container {
         width: 50%;
     }
-    .detail-header{
+    .detail-header {
         margin: none;
     }
 }
@@ -555,4 +556,27 @@ nav {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: white;
+}
+
+.reveal-img,
+.reveal-text {
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background: #17181a;
+    left: 0;
+    top: -15%;
+}
+
+// GSAP pre set css
+.movie-flex {
+    transform: translateX(-100%);
+}
+
+.now-playing-news {
+    transform: translateX(1000%);
+}
+
+.secondary-playing{
+    opacity: 0;
 }

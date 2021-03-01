@@ -214,3 +214,16 @@ submitBtn.addEventListener("click", function (e) {
     clearSearches();
     clearField();
 });
+
+// const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+// tl.to("nav",{ opacity: 1, duration: 1 });
+// tl.to(".movie-flex ", { x: "0%", duration: 1.25 });
+// tl.to(".now-playing-news", { x: "0%", duration: 1.25 });
+
+// Class and then class setting u want and then duration, ease u can google it
+
+gsap.to("nav", { opacity: 1, duration: 3 });
+gsap.to(".movie-flex ", { x: "0%", duration: 1.25, ease: "bounce" });
+gsap.to(".now-playing-news", { x: "0%", duration: 1.25 });
+gsap.to(".secondary-playing", { opacity: 1, duration: 1.5 });

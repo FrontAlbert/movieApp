@@ -32,6 +32,7 @@ nav {
   color: #d0e1f9;
   width: 100%;
   background-color: #18191a;
+  opacity: 0;
 }
 
 nav p {
@@ -689,5 +690,29 @@ nav .nav-btns div a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: white;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: #17181a;
+  left: 0;
+  top: -15%;
+}
+
+.movie-flex {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.now-playing-news {
+  -webkit-transform: translateX(1000%);
+          transform: translateX(1000%);
+}
+
+.secondary-playing {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
