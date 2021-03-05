@@ -67,3 +67,5 @@ submitBtn.addEventListener("click", function (e) {
     clearSearches();
     clearField();
 });
+
+gsap.to(".homepage", { opacity: 1, x: "0%", duration: 3 });
