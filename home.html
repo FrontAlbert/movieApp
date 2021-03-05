@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styling/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <script
+            src="https://kit.fontawesome.com/d9a1b3fb2a.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>The Movie Network</title>
+    </head>
+
+    <body>
+        
+        <nav>
+            <div class="nav-bar nav-header">
+                <div class="logo">
+                    <p class='hidetext'>MOVIEFY</p>
+                </div>
+                <div class="main-header">
+                    <form class="search-form">
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <input
+                            type="text"
+                            name="search"
+                            placeholder="Search For Movies.. maybe Avengers?"
+                            class="search-input"
+                        />
+                    </form>
+                </div>
+                <div class="nav-btns">
+
+                    <div>
+                        <a href="home.html" class="nav-btn"
+                            ><i class="fas icon fa-home"></i><p class='hidetext'>Home</p></a
+                        >
+                    </div>
+                    <div>
+                        <a href="newly.html" class="nav-btn"
+                            ><i class="far icon fa-clock"></i><p class='hidetext'>New Releases</p></a
+                        >
+                    </div>
+                    <div>
+                        <a href="hot.html" class="nav-btn"
+                            ><i class="fas icon fa-fire-alt"></i><p class='hidetext'>Hot Movies</p></a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            href="https://frontalbert.github.io/Portfolio2021/"
+                            class="nav-btn"
+                            ><i class="fab fa-github"></i
+                        ></a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+            <div>
+            <section id="main">
+                <div class="movie-body">
+
+                    <div class="search-results">
+                    </div>
+                    <div class="slide">
+                        <h1 class='first-header'>In Theatres Right Now!</h1>
+                        <div class="movie-flex">
+                            <div class="now-playing"></div>
+                            <div class="now-playing-news">
+                                <h2>Seen them all already? How about these!</h2>
+                                <div class="hot-films"></div>
+                                <a href="newly.html" class="more-info">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div >
+                        <h1>Trending for the week</h1>
+                        <div class="movie-flex">
+                            <div class="now-playing-news">
+                                <h2>Some Weekly News</h2>
+                                <div class='weekly-trend'>
+                                    <a href="index.html">The Best Movie Site of 2020s?</a>
+                                    <a href="https://www.imdb.com/golden-globes/nominees-streaming/ls084844806/mediaviewer/rm2181869313/?pf_rd_r=WGXQ4E1BYYBKGFHGK6AD&pf_rd_p=f15ff318-46c1-4cfe-9080-8893ef215796&pf_rd_m=A2FGELUUNOQJNL&pf_rd_t=15061&pf_rd_i=home&pf_rd_s=featured-today-2"> Our Golden Globe Watch List of 2020!</a>
+                                    <a href="https://www.imdb.com/golden-globes/power-couples/rg3319700224/mediaviewer/rm2132399361/?pf_rd_r=WGXQ4E1BYYBKGFHGK6AD&pf_rd_p=ae95bf11-e5ec-4b61-85dd-9b96bb106b92&pf_rd_m=A2FGELUUNOQJNL&pf_rd_t=15061&pf_rd_i=home&pf_rd_s=featured-today-1">Hollywood Romances, Our Favorite Couples so far..</a>
+                                    <a href="https://www.imdb.com/name/nm0000138/?ref_=hm_rvi_nm">Leonardio DiCaprio, early retirement?</a>
+                                    
+                                </div>
+                            </div>
+                            <div class="trending-movies"></div>
+                        </div>
+
+                    </div>
+                    <div class="actors">
+                        <h1>Popular Actors/Actress of the Week</h1>
+                        <div class="popular-people"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-row1">
+                <ul>
+                    <li><i class="fab fa-github-square"></i></li>
+                    <li><i class="fab fa-imdb"></i></li>
+                    <li><i class="fas fa-user-friends"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                </ul>
+            </div>
+            <div class="footer-row2">
+                <p>Made By Albert, Powered by The Movie API</p>
+            </div>
+            <div class="footer-row3">
+                <i class="far fa-copyright"></i>
+                <p>Not an Tesla Company</p>
+            </div>
+
+        </footer>
+    </body>
+    <!-- GSAP ANIMATION -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <!-- GSAP SCROLL TRIGGER -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426" ></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js" ></script>
+    <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b" ></script>
+    <script src="main.js"></script>
+</html>
+
+<!-- #ffffff • #d0e1f9 • #4d648d • #283655 • #1e1f26 -->

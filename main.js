@@ -60,6 +60,8 @@ function updateInput(e) {
     searchValue = e.target.value;
 }
 
+
+
 // FETCH NOW PLAYING
 async function fetchNowPlaying() {
     const dataFetch = await fetch(
@@ -214,6 +216,9 @@ submitBtn.addEventListener("click", function (e) {
     clearSearches();
     clearField();
 });
+
+
+// Side Nav
 
 // const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 

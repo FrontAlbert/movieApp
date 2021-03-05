@@ -88,6 +88,14 @@ nav .nav-btns div a {
           align-items: center;
 }
 
+.favorites {
+  border: none;
+}
+
+.favorites i {
+  background: none;
+}
+
 .icon {
   padding-right: 1rem;
   color: #d0e1f9;
@@ -720,5 +728,106 @@ nav .nav-btns div a {
 
 .actors {
   opacity: 0;
+}
+
+.homepage {
+  background-image: url(../images/background.jpg);
+}
+
+.home-logo {
+  font-size: 3rem;
+}
+
+.home-page {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  width: 80%;
+  margin: auto;
+  border: 1px solid blue;
+  margin: 8vh auto;
+}
+
+.home-page a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.home-page a:hover {
+  font-size: 2.2rem;
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22.1em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22.1em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.home-search input {
+  border-radius: 5px;
+  height: 5vh;
+  width: 27%;
+  border: black;
+  font-size: 1.2rem;
+}
+
+.home-search button {
+  color: white;
+  background-color: #283655;
+  border: none;
+  border-radius: 25px;
+  width: 5%;
+  height: 5vh;
 }
 /*# sourceMappingURL=style.css.map */

@@ -61,6 +61,13 @@ nav {
     }
 }
 
+.favorites {
+    border: none;
+    i {
+        background: none;
+    }
+}
+
 .icon {
     padding-right: 1rem;
     color: #d0e1f9;
@@ -577,11 +584,90 @@ nav {
     transform: translateX(1000%);
 }
 
-.secondary-playing{
+.secondary-playing {
     transform: translateX(-100%);
     opacity: 0;
 }
 
-.actors{
+.actors {
     opacity: 0;
+}
+
+.homepage {
+    background-image: url(../images/background.jpg);
+}
+
+.home-logo{
+    font-size: 3rem;
+}
+
+.home-page {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    width: 80%;
+    margin: auto;
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        &:hover {
+            font-size: 2.2rem;
+        }
+    }
+    border: 1px solid blue;
+    margin: 8vh auto;
+}
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 22.1em;
+    }
+}
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.home-search {
+    input {
+        border-radius: 5px;
+        height: 5vh;
+        width: 27%;
+        border: black;
+        font-size: 1.2rem;
+    }
+    button {
+        color: white;
+        background-color: #283655;
+        border: none;
+        border-radius: 25px;
+        width: 5%;
+        height: 5vh;
+    }
 }

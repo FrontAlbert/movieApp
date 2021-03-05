@@ -1,4 +1,4 @@
-const content = document.querySelector('.secondary-playing')
+const content = document.querySelector(".secondary-playing");
 
 async function fetchNewRelease() {
     const dataFetch = await fetch(
@@ -39,7 +39,6 @@ const newRelease = () => {
             `;
             content.insertAdjacentHTML("beforeend", markup);
         });
-
     });
 };
 // FETCH NOW PLAYING
@@ -47,3 +46,14 @@ const newRelease = () => {
 window.onload = () => {
     newRelease();
 };
+
+// Side Nav
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+// Side Nav
