@@ -744,7 +744,6 @@ nav .nav-btns div a {
   color: white;
   width: 80%;
   margin: auto;
-  border: 1px solid blue;
   margin: 8vh auto;
 }
 
@@ -829,5 +828,10 @@ nav .nav-btns div a {
   border-radius: 25px;
   width: 5%;
   height: 5vh;
+}
+
+.homepage {
+  margin: auto;
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */
